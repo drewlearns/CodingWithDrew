@@ -37,11 +37,13 @@ powerButton.addEventListener("click", (event) => {
   if (power == true) {
     power = true;
     turnCounter.innerHTML = "-ON-";
+    clearColor(); // TODO: Need to define clearColor()
+    clearInterval(intervalId); // TODO: Need to define clearInterval
     let audio = document.querySelector("#audio5");
     audio.play();
-  } else {
-    power = true;
-    turnCounter.innerHTML = "";
+  }else{
+    power = true
+    turnCounter.innerHTML = "-ON-";
     clearColor(); // TODO: Need to define clearColor()
     clearInterval(intervalId); // TODO: Need to define clearInterval
     let audio = document.querySelector("#audio5");
@@ -159,7 +161,7 @@ topleft.addEventListener("click", (event) => {
     if (!win) {
       setTimeout(() => {
         clearColor();
-      }, 300);
+      }, 800);
     }
   }
 });
@@ -173,7 +175,7 @@ topright.addEventListener("click", (event) => {
     if (!win) {
       setTimeout(() => {
         clearColor();
-      }, 300);
+      }, 800);
     }
   }
 });
@@ -187,7 +189,7 @@ bottomright.addEventListener("click", (event) => {
     if (!win) {
       setTimeout(() => {
         clearColor();
-      }, 300);
+      }, 800);
     }
   }
 });
@@ -201,7 +203,7 @@ bottomleft.addEventListener("click", (event) => {
     if (!win) {
       setTimeout(() => {
         clearColor();
-      }, 300);
+      }, 800);
     }
   }
 });
@@ -246,6 +248,4 @@ function winGame() {
   power = false;
   win = true;
   intervalId = setInterval(gameTurn(), 800);
-  
-
 }
