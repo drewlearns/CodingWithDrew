@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="apple-touch-icon" sizes="152x152" href="../apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <link rel="manifest" href="../site.webmanifest" />
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <audio src="https://portfolio.codingwithdrew.com/simon-says/media/1.mp3"></audio>
-    <audio src="https://portfolio.codingwithdrew.com/simon-says/media/2.mp3"></audio>
-    <audio src="https://portfolio.codingwithdrew.com/simon-says/media/3.mp3"></audio>
-    <audio src="https://portfolio.codingwithdrew.com/simon-says/media/4.mp3"></audio>
     <link rel="stylesheet" href="css/main.css" />
     <title>Simon</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,10 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
       rel="stylesheet"
     />
-    <audio id="1" src="./media/1.mp3"></audio>
-    <audio id="2" src="./media/2.mp3"></audio>
-    <audio id="3" src="./media/3.mp3"></audio>
-    <audio id="4" src="./media/4.mp3"></audio>
+    <audio id="audio1" src="./media/1.mp3"></audio>
+    <audio id="audio2" src="./media/2.mp3"></audio>
+    <audio id="audio3" src="./media/3.mp3"></audio>
+    <audio id="audio4" src="./media/4.mp3"></audio>
   </head>
   <body>
     <div class="border">
@@ -31,9 +34,9 @@
         <div id="inner-circle">
           <div id="title" class="font-effect-emboss">SIMON</div>
           <div id="switches">
-            <input type="checkbox" class="toggle" id="on" />
-            <button class="button" id="start">Start</button>
-            <input type="checkbox" class="toggle" id="strict" />
+            <button class="button" id="start">
+              <img src="./media/pngwing.com.png" width="30px" alt="" />
+            </button>
           </div>
 
           <div id="turn"></div>
@@ -41,8 +44,10 @@
         </div>
       </div>
     </div>
-    <div class="text1">Left toggle is Power</div>
-    <div class="text2">Right toggle is Strict Mode</div>
+    <div class="text1">
+      Would you like to play on hard mode? Click the check box Below
+    </div>
+    <input type="checkbox" class="toggle" id="strict" />
     <script src="js/index.js"></script>
   </body>
 </html>

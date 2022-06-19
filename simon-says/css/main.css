@@ -2,10 +2,6 @@ body {
     background-color: rgb(181, 178, 178);
   }
   
-  .toggle {
-
-  }
-  
   .button {
     border-radius: 50% !important;
     font-size: 1.5em;
@@ -23,7 +19,15 @@ body {
     font-family: 'Archivo Black', sans-serif;
     color: black;
   }
-  
+  #start{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    margin-left: 23px;
+    border-radius: 60vw;
+  }
   .text1 {
     font-family: 'Archivo Black', sans-serif;
     color: black
@@ -49,8 +53,8 @@ body {
     font-family: courier;
     font-size: 20px;
     height: 30px;
-    width: 40px;
-    margin-left: 77.5px;
+    width: 60px;
+    margin-left: 65px;
     margin-top: 150px;
     text-align: center;
     vertical-align: middle;
