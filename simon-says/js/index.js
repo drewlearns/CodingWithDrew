@@ -91,7 +91,7 @@ function gameTurn() {
         four();
       }
       flash++;
-    }, 200);
+    }, 800);
   }
 }
 
