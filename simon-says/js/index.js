@@ -39,7 +39,9 @@ powerButton.addEventListener("click", (event) => {
     clearColor(); // TODO: Need to define clearColor()
     clearInterval(intervalId); // TODO: Need to define clearInterval
     let audio = document.querySelector("#audio5");
+    noise = true;
     audio.play();
+    noise = false;
   }
   }
   console.log("power", power);
