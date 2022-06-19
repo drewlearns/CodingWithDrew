@@ -34,16 +34,14 @@ strictButton.addEventListener("click", (event) => {
 // power button
 powerButton.addEventListener("click", (event) => {
   console.log("clicked power");
-    power = true;
-    turnCounter.innerHTML = "-ON-";
-    clearColor(); // TODO: Need to define clearColor()
-    clearInterval(intervalId); // TODO: Need to define clearInterval
-    let audio = document.querySelector("#audio5");
-    noise = true;
-    audio.play();
-    noise = false;
-  }
-  }
+  power = true;
+  turnCounter.innerHTML = "-ON-";
+  clearColor(); // TODO: Need to define clearColor()
+  clearInterval(intervalId); // TODO: Need to define clearInterval
+  let audio = document.querySelector("#audio5");
+  noise = true;
+  audio.play();
+  noise = false;
   console.log("power", power);
   if (power || win) {
     play(); // TODO: define play()
@@ -243,6 +241,4 @@ function winGame() {
   power = false;
   win = true;
   intervalId = setInterval(gameTurn(), 800);
-  
-
 }
