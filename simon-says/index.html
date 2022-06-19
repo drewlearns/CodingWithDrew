@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <audio src="https://portfolio.codingwithdrew.com/simon-says/audio/"></audio>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Simon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <audio id="1" src="./media/1.mp3"></audio>
+    <audio id="2" src="./media/2.mp3"></audio>
+    <audio id="3" src="./media/3.mp3"></audio>
+    <audio id="4" src="./media/4.mp3"></audio>
+  </head>
+  <body>
+    <div class="border">
+      <div id="outer-circle">
+        <div id="topleft"></div>
+        <div id="topright"></div>
+        <div id="bottomleft"></div>
+        <div id="bottomright"></div>
+        <div id="inner-circle">
+          <div id="title" class="font-effect-emboss">SIMON</div>
+          <div id="switches">
+            <input type="checkbox" class="toggle" id="on" />
+            <button class="button" id="start">Start</button>
+            <input type="checkbox" class="toggle" id="strict" />
+          </div>
+
+          <div id="turn"></div>
+          <div class="text2"></div>
+        </div>
+      </div>
+    </div>
+    <div class="text1">Left toggle is Power</div>
+    <div class="text2">Right toggle is Strict Mode</div>
+  </body>
+</html>
