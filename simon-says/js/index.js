@@ -41,7 +41,6 @@ powerButton.addEventListener("click", (event) => {
   let audio = document.querySelector("#audio5");
   noise = true;
   audio.play();
-  noise = false;
   console.log("power", power);
   if (power || win) {
     play(); // TODO: define play()
