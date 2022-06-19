@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(36, 34, 34);
+    background-color: rgb(181, 178, 178);
   }
   
   .toggle {
@@ -21,12 +21,12 @@ body {
   
   .text2 {
     font-family: 'Archivo Black', sans-serif;
-    color: white;
+    color: black;
   }
   
   .text1 {
     font-family: 'Archivo Black', sans-serif;
-    color: white
+    color: black
   }
   
   .text1 span:last-child {
@@ -64,7 +64,6 @@ body {
     position: relative;
     margin: auto;
     margin-top: 60px;
-    box-shadow: 1px 1px 1px 1px white;
   }
 
   #topleft {
