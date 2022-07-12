@@ -1,0 +1,17 @@
+.lyrics{
+    text-align: center;
+    font-size: 1.3em;
+    background-color: #01ceff;
+
+}
+.video{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+}
+h1{
+    text-align: center;
+}
+.price{
+    text-align: center;
+}
