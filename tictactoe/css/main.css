@@ -1,0 +1,38 @@
+.column{
+    font-size: 3em;
+    text-align: center=;
+    padding: 50px;
+    height: 120px;
+    padding-bottom: 120px;
+    padding-left: 65px;
+}
+
+#one{
+    border-bottom: 3px solid black;
+}
+#two{
+    border-left: 3px solid black;
+    border-right:3px solid black;
+    border-bottom: 3px solid black;
+}
+#three{
+    border-bottom: 3px solid black;
+}
+#four{
+    border-bottom: 3px solid black;
+}
+#five{
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+#six{
+    border-bottom: 3px solid black;
+}
+#eight{
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+.confirm{
+    display: none;
+}
