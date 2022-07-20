@@ -69,6 +69,7 @@ function play() {
   console.log("order:", order);
   compTurn = true;
   let intervalId = setInterval(gameTurn, 800);
+  console.log(playerOrder);
 }
 
 function gameTurn() {
@@ -95,7 +96,7 @@ function gameTurn() {
         four();
       }
       flash++;
-    }, 200);
+    }, 400);
   }
 }
 
@@ -151,69 +152,74 @@ function flashColor() {
 
 // green
 topleft.addEventListener("click", (event) => {
-  console.log("clicked green");
+  console.log("clicked 1");
   if (power) {
     playerOrder.push(1);
-    check();
-    one();
-    if (!win) {
-      setTimeout(() => {
-        clearColor();
-      }, 300);
-    }
-  }
-});
-//red
-topright.addEventListener("click", (event) => {
-  console.log("clicked red");
-  if (power) {
-    playerOrder.push(1);
+    console.log(playerOrder)
     check();
     two();
     if (!win) {
       setTimeout(() => {
         clearColor();
-      }, 300);
+      }, 500);
+    }
+  }
+});
+//red
+topright.addEventListener("click", (event) => {
+  console.log("clicked 2");
+  if (power) {
+    playerOrder.push(2);
+    console.log(playerOrder)
+    check();
+    two();
+    if (!win) {
+      setTimeout(() => {
+        clearColor();
+      }, 500);
     }
   }
 });
 //blue
 bottomright.addEventListener("click", (event) => {
-  console.log("clicked blue");
+  console.log("clicked 3");
   if (power) {
-    playerOrder.push(1);
+    playerOrder.push(3);
+    console.log(playerOrder)
     check();
     three();
     if (!win) {
       setTimeout(() => {
         clearColor();
-      }, 300);
+      }, 500);
     }
   }
 });
 //yellow
 bottomleft.addEventListener("click", (event) => {
-  console.log("clicked yellow");
+  console.log("clicked 4");
   if (power) {
-    playerOrder.push(1);
+    playerOrder.push(4);
+    console.log(playerOrder)
     check();
     four();
     if (!win) {
       setTimeout(() => {
         clearColor();
-      }, 300);
+      }, 500);
     }
   }
 });
 
 function check() {
-  if (playerOrder[playerOrder.length - 1] == order[playerOrder.length - 1]) {
+  console.log(playerOrder, "vs", order.slice(0, playerOrder.length))
+  if (playerOrder == order.slice(0, playerOrder.length)) {
     good = false;
-  }
+  } else { good = true };
   if (playerOrder.length == 20 && good) {
     winGame();
   }
-  if (good == false) {
+  if (good == true) {
     flashColor();
     turnCounter.innerHTML = "OPE!";
     setTimeout(() => {
@@ -226,9 +232,9 @@ function check() {
         flash = 0;
         playerOrder = [];
         good = true;
-        intervalId = setInterval(gameTurn(), 800);
+        intervalId = setInterval(gameTurn(), 1001);
       }
-    }, 800);
+    }, 1000);
     noise = false;
   }
   if (turn == playerOrder.length && good && !win) {
@@ -237,7 +243,7 @@ function check() {
     compTurn = true;
     flash = 0;
     turnCounter.innerHTML = turn;
-    intervalId = setInterval(gameTurn(), 800);
+    intervalId = setInterval(gameTurn(), 1001);
   }
 }
 function winGame() {
@@ -245,5 +251,5 @@ function winGame() {
   turnCounter.innerHTML = "WIN!";
   power = false;
   win = true;
-  intervalId = setInterval(gameTurn(), 800);
+  intervalId = setInterval(gameTurn(), 1001);
 }

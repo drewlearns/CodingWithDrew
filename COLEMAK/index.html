@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Colemak</title>
+</head>
+<body>
+  <nav class="navbar bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://codingwithdrew.com">
+        <img
+          src="/media/Black-Logo-Coding-With-Drew.png"
+          alt="codingiwthdrew"
+          width="150"
+          class="d-inline-block align-text-top"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="https://portfolio.codingwithdrew.com"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codingwithdrew.com/courses/"
+              >Courses</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h1>Practice Colemak Layout</h1>
+  <h2>Don't look at the keyboard!</h2>
+  <div class="keyboard">
+    <ul class="keyrow keyrow-1">
+      <li class="lpinky square" id="`">`</li>
+      <li class="lpinky square" id="1">1</li>
+      <li class="lring square" id="2">2</li>
+      <li class="lmiddle square" id="3">3</li>
+      <li class="lindex1 square" id="4">4</li>
+      <li class="lindex2 square" id="5">5</li>
+      <li class="rindex2 square" id="6">6</li>
+      <li class="rindex1 square" id="7">7</li>
+      <li class="rmiddle square" id="8">8</li>
+      <li class="rring square" id="9">9</li>
+      <li class="rpinky square" id="0">0</li>
+      <li class="rpinky square" id="-">-</li>
+      <li class="rpinky square" id="=">=</li>
+      <li class="rpinky grey short" id="Backspace">delete</li>
+    </ul>
+    <ul class="keyrow keyrow-2">
+      <li class="lpinky grey short" id="Tab">tab</li>
+      <li class="lpinky square" id="q">Q</li>
+      <li class="lring square" id="w">W</li>
+      <li class="lmiddle square" id="e">F</li>
+      <li class="lindex1 square" id="r">P</li>
+      <li class="lindex2 square" id="t">G</li>
+      <li class="rindex2 square" id="y">J</li>
+      <li class="rindex1 square" id="u">L</li>
+      <li class="rmiddle square" id="i">U</li>
+      <li class="rring square" id="o">Y</li>
+      <li class="rpinky square" id="p">;</li>
+      <li class="rpinky square" id="[">[</li>
+      <li class="rpinky square" id="]">]</li>
+      <li class="rpinky square" id="\\">\</li>
+    </ul>
+    <ul class="keyrow keyrow-3">
+      <li class="lpinky grey long" id="CapsLock">caps lock</li>
+      <li class="lpinky base square" id="a">A</li>
+      <li class="lring base square" id="s">R</li>
+      <li class="lmiddle base square" id="d">S</li>
+      <li class="lindex1 base home square" id="f">T</li>
+      <li class="lindex2 square" id="g">D</li>
+      <li class="rindex2 square" id="h">H</li>
+      <li class="rindex1 base home square" id="j">N</li>
+      <li class="rmiddle base square" id="k">E</li>
+      <li class="rring base square" id="l">I</li>
+      <li class="rpinky base square" id=";">O</li>
+      <li class="rpinky square" id="'">'</li>
+      <li class="rpinky grey long" id="Enter">return</li>
+    </ul>
+    <ul class="keyrow keyrow-4">
+      <li class="lpinky grey longer" id="Shift">shift</li>
+      <li class="lpinky square" id="z">Z</li>
+      <li class="lring square" id="x">X</li>
+      <li class="lmiddle square" id="c">C</li>
+      <li class="lindex1 square" id="v">V</li>
+      <li class="lindex2 square" id="b">B</li>
+      <li class="rindex2 square" id="n">K</li>
+      <li class="rindex1 square" id="m">M</li>
+      <li class="rmiddle square" id=",">,</li>
+      <li class="rring square" id=".">.</li>
+      <li class="rpinky square" id="/">/</li>
+      <li class="rpinky grey longer" id="Shift">shift</li>
+    </ul>
+    <ul class="keyrow keyrow-5">
+      <li class="grey square fn" id="fn">fn</li>
+      <li class="grey square control" id="Control">control</li>
+      <li class="grey square" id="Alt"> option</li>
+      <li class="grey shortest meta" id="Meta">command</li>
+      <li class="grey space" id=" "></li>
+      <li class="grey shortest meta">command</li>
+      <li class="grey square option">option</li>
+      <li class="longest grey" id="arkeyrows">d-pad</li>
+    </ul>
+</div>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+crossorigin="anonymous"
+></script>
+<script src="index.js"></script>
+</body>
+</html>
