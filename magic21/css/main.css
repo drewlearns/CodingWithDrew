@@ -10,19 +10,21 @@ ul {
     justify-content: center;
     align-items: center;
     flex-basis: 100%;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 10px 10%;
 }
 
 li {
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: space-between;
     border: 1px solid black;
-    height: 7rem;
-    width: 5rem;
+    height: 13rem;
+    width: 8rem;
     border-radius: 10px;
     margin: 10px;
     background-color: rgba(255, 252, 251, 0.947);
@@ -32,11 +34,15 @@ li {
 }
 
 @-webkit-keyframes slide {
-    100% { left: 0; }
+    100% {
+        left: 0;
+    }
 }
 
 @keyframes slide {
-    100% { left: 0; }
+    100% {
+        left: 0;
+    }
 }
 
 
@@ -68,25 +74,25 @@ li {
 .bottom {
     margin: 10px;
     font-weight: bolder;
-    font-size: .8rem;
+    font-size: 2rem;
 }
 
 .cardType {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 3rem;
     transform: scaleX(-1);
-    margin: -5px;
+    margin: -10px;
 }
 
 .mirror {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 3rem;
     transform: scaleY(-1);
-    margin: -8px;
+    margin: -20px;
 }
 
 .buttons {
@@ -95,61 +101,55 @@ li {
     justify-content: center;
 }
 
-button {
-    background-color: #0059ff;
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
-    color: white;
-    margin: 10px;
-}
 
-button:hover {
-    background-color: white;
-    border: #0059ff solid 1px;
-    padding: 10px;
-    border-radius: 10px;
-    color: #0059ff;
-}
-#button4{
+#button4 {
     background-color: white;
     border: red solid 1px;
     padding: 10px;
     border-radius: 10px;
     color: black;
 }
-#button4:hover{
+
+#button4:hover {
     background-color: red;
     color: white;
 }
 
-.noDisplay{
+.noDisplay {
     display: none;
 }
+
 .display {
     display: block;
 }
+
 ul.group1 {
     border-radius: 20px;
     border: Red 3px solid;
 }
+
 ul.group2 {
     border-radius: 20px;
     border: blue 3px solid;
 }
+
 ul.group3 {
     border-radius: 20px;
     border: green 3px solid;
 }
-label{
+
+label {
     text-align: center;
 }
+
 .green {
     background-color: green;
 }
-.blue{
+
+.blue {
     background-color: #0059ff;
 }
-.red{
+
+.red {
     background-color: red;
 }
