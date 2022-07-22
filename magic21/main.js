@@ -1,6 +1,5 @@
 
 // group1cards1.push(shuffled[group1Index[i]])
-// cardList1.innerHTML += `<li class="card" id="a${i}"><span class="top" >${shuffled[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${shuffled[i]}</span></li>`
 // cardList2.innerHTML += `<li class="card" id="a${i}"><span class="top" >${shuffled[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${shuffled[i]}</span></li>`
 // cardList3.innerHTML += `<li class="card" id="a${i}"><span class="top" >${shuffled[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${shuffled[i]}</span></li>`
 const cards = ["J ♦️", "Q ♦️", " K ♦️", " A ♠", "A ❤️", "2 ❤️", "3 ❤️", "4 ❤️", "5 ❤️", "6 ❤️", "7 ❤️", "8 ♠", "9 ❤️", "10 ❤️", "J ♠", "Q ❤️", "K ❤️", "A ♠", "2 ♦️", "3 ♣", "4 ♦️"];
@@ -52,6 +51,36 @@ for (i = 0; i < 7; i++) {
     group2.push(shuffled[g2[i]])
     group3.push(shuffled[g3[i]])
 }
+const cardList1 = document.querySelector("ul.group1")
+for (i=0; i<group1.length; i++){
+    cardList1.innerHTML += `<li class="card"><span class="top" >${group1[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group1[i]}</span></li>`
+}
+const cardList2 = document.querySelector("ul.group2")
+for (i=0; i<group1.length; i++){
+    cardList2.innerHTML += `<li class="card"><span class="top" >${group2[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group2[i]}</span></li>`
+}
+const cardList3 = document.querySelector("ul.group3")
+for (i=0; i<group1.length; i++){
+    cardList3.innerHTML += `<li class="card"><span class="top" >${group3[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group3[i]}</span></li>`
+}
+cardList1.addEventListener(
+    "click",
+    ()=>{
+        console.log("Your card was in card list 1:", cardList1)
+    }
+)
+cardList2.addEventListener(
+    "click",
+    ()=>{
+        console.log("Your card was in card list 2:", cardList2)
+    }
+)
+cardList3.addEventListener(
+    "click",
+    ()=>{
+        console.log("Your card was in card list 3:", cardList3)
+    }
+)
 
 // if your card is in the X group, shuffle so the X group is in the middle
 if (group1.includes(num)) {
