@@ -150,13 +150,10 @@ cardList1.addEventListener(
 cardList2.addEventListener(
     "click",
     () => {
-        console.log("Click", count)
         if (count < 1) {
-            console.log("Your card was in card list 1, first click:", cardList1)
             newdeck.push(...group1);
             newdeck.push(...group2);
             newdeck.push(...group3);
-            console.log("group1 newdeck", newdeck)
             cardlist1.innerHTML = ""
             cardlist2.innerHTML = ""
             cardlist3.innerHTML = ""
@@ -180,8 +177,6 @@ cardList2.addEventListener(
             newdeck2.push(...group11)
             newdeck2.push(...group12)
             newdeck2.push(...group13)
-            console.log("Your card was in card list 1, click 2:", cardList1)
-            console.log("group1 newdeck", newdeck2)
             cardlist1.innerHTML = ""
             cardlist2.innerHTML = ""
             cardlist3.innerHTML = ""
@@ -220,13 +215,10 @@ cardList2.addEventListener(
 cardList3.addEventListener(
     "click",
     () => {
-        console.log("Click", count)
         if (count < 1) {
-            console.log("Your card was in card list 1, first click:", cardList1)
             newdeck.push(...group1);
             newdeck.push(...group3);
             newdeck.push(...group2);
-            console.log("group1 newdeck", newdeck)
             cardlist1.innerHTML = ""
             cardlist2.innerHTML = ""
             cardlist3.innerHTML = ""
@@ -250,8 +242,6 @@ cardList3.addEventListener(
             newdeck2.push(...group11)
             newdeck2.push(...group13)
             newdeck2.push(...group12)
-            console.log("Your card was in card list 1, click 2:", cardList1)
-            console.log("group1 newdeck", newdeck2)
             cardlist1.innerHTML = ""
             cardlist2.innerHTML = ""
             cardlist3.innerHTML = ""
@@ -287,7 +277,3 @@ cardList3.addEventListener(
         count++
     }
 )
-
-
-// Your Card displayed
-console.log("Your card", newdeck2[11])
