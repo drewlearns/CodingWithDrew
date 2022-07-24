@@ -258,8 +258,8 @@ cardList3.addEventListener(
             // deal kinda
             for (i = 0; i < 7; i++) {
                 group21.push(newdeck2[g1[i]]);
-                group22.push(newdeck2[g2[i]]);
                 group23.push(newdeck2[g3[i]]);
+                group22.push(newdeck2[g2[i]]);
             }
             for (i = 0; i < group21.length; i++) {
                 cardList1.innerHTML += `<li class="card"><span class="top">${group21[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group21[i]}</span></li>`
