@@ -1,7 +1,7 @@
 
 // group1cards1.push(shuffled[group1Index[i]])
-// cardList2.innerHTML += `<li class="card" id="a${i}"><span class="top" >${shuffled[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${shuffled[i]}</span></li>`
-// cardList3.innerHTML += `<li class="card" id="a${i}"><span class="top" >${shuffled[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${shuffled[i]}</span></li>`
+// cardList2.innerHTML += `<li class="card display" id="a${i}"><span class="top" >${shuffled[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${shuffled[i]}</span></li>`
+// cardList3.innerHTML += `<li class="card display" id="a${i}"><span class="top" >${shuffled[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${shuffled[i]}</span></li>`
 const cards = ["J ♦️", "Q ♦️", " K ♦️", " A ♠", "A ❤️", "2 ❤️", "3 ❤️", "4 ❤️", "5 ❤️", "6 ❤️", "7 ❤️", "8 ♠", "9 ❤️", "10 ❤️", "J ♠", "Q ❤️", "K ❤️", "A ♠", "2 ♦️", "3 ♣", "4 ♦️"];
 // let cards = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 
@@ -69,15 +69,15 @@ button1.addEventListener(
 
 const cardList1 = document.querySelector("ul.group1")
 for (i = 0; i < group1.length; i++) {
-    cardList1.innerHTML += `<li class="card"><span class="top">${group1[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group1[i]}</span></li>`
+    cardList1.innerHTML += `<li class="card display"><span class="top">${group1[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group1[i]}</span></li>`
 }
 const cardList2 = document.querySelector("ul.group2")
 for (i = 0; i < group1.length; i++) {
-    cardList2.innerHTML += `<li class="card"><span class="top">${group2[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group2[i]}</span></li>`
+    cardList2.innerHTML += `<li class="card display"><span class="top">${group2[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group2[i]}</span></li>`
 }
 const cardList3 = document.querySelector("ul.group3")
 for (i = 0; i < group1.length; i++) {
-    cardList3.innerHTML += `<li class="card"><span class="top">${group3[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group3[i]}</span></li>`
+    cardList3.innerHTML += `<li class="card display"><span class="top">${group3[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group3[i]}</span></li>`
 }
 cardList1.addEventListener(
     "click",
@@ -99,13 +99,13 @@ cardList1.addEventListener(
                 group13.push(newdeck[g3[i]]);
             }
             for (i = 0; i < group11.length; i++) {
-                cardList1.innerHTML += `<li class="card"><span class="top">${group11[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group11[i]}</span></li>`
+                cardList1.innerHTML += `<li class="card display"><span class="top">${group11[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group11[i]}</span></li>`
             }
             for (i = 0; i < group12.length; i++) {
-                cardList2.innerHTML += `<li class="card"><span class="top">${group12[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group12[i]}</span></li>`
+                cardList2.innerHTML += `<li class="card display"><span class="top">${group12[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group12[i]}</span></li>`
             }
             for (i = 0; i < group13.length; i++) {
-                cardList3.innerHTML += `<li class="card"><span class="top">${group13[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group13[i]}</span></li>`
+                cardList3.innerHTML += `<li class="card display"><span class="top">${group13[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group13[i]}</span></li>`
             }
         } else if (count < 2 && count > 0) {
 
@@ -124,21 +124,21 @@ cardList1.addEventListener(
                 group23.push(newdeck2[g3[i]]);
             }
             for (i = 0; i < group21.length; i++) {
-                cardList1.innerHTML += `<li class="card"><span class="top">${group21[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group21[i]}</span></li>`
+                cardList1.innerHTML += `<li class="card display"><span class="top">${group21[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group21[i]}</span></li>`
             }
             for (i = 0; i < group22.length; i++) {
-                cardList2.innerHTML += `<li class="card"><span class="top">${group22[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group22[i]}</span></li>`
+                cardList2.innerHTML += `<li class="card display"><span class="top">${group22[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group22[i]}</span></li>`
             }
             for (i = 0; i < group23.length; i++) {
-                cardList3.innerHTML += `<li class="card"><span class="top">${group23[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group23[i]}</span></li>`
+                cardList3.innerHTML += `<li class="card display"><span class="top">${group23[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group23[i]}</span></li>`
             }
         } else if (count < 3 && count > 1) {
             cardlist1.innerHTML = ""
             cardlist3.innerHTML = ""
             cardlist3.innerHTML = ""
             shuffledList.innerHTML = ""
-            shuffledList.innerHTML = `<li class="card"><span class="top">${newdeck2[10]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${newdeck2[10]}</span></li>`
-            console.log(newdeck3[10])
+            shuffledList.innerHTML = `<li class="card display"><span class="top">${newdeck2[10]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${newdeck2[10]}</span></li>`
+            console.log(newdeck2[11])
 
             cardlist1.setAttribute("class", "noDisplay")
             cardlist2.setAttribute("class", "noDisplay")
@@ -168,13 +168,13 @@ cardList2.addEventListener(
                 group13.push(newdeck[g3[i]]);
             }
             for (i = 0; i < group11.length; i++) {
-                cardList1.innerHTML += `<li class="card"><span class="top">${group11[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group11[i]}</span></li>`
+                cardList1.innerHTML += `<li class="card display"><span class="top">${group11[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group11[i]}</span></li>`
             }
             for (i = 0; i < group12.length; i++) {
-                cardList2.innerHTML += `<li class="card"><span class="top">${group12[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group12[i]}</span></li>`
+                cardList2.innerHTML += `<li class="card display"><span class="top">${group12[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group12[i]}</span></li>`
             }
             for (i = 0; i < group13.length; i++) {
-                cardList3.innerHTML += `<li class="card"><span class="top">${group13[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group13[i]}</span></li>`
+                cardList3.innerHTML += `<li class="card display"><span class="top">${group13[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group13[i]}</span></li>`
             }
         } else if (count < 2 && count > 0) {
 
@@ -193,21 +193,21 @@ cardList2.addEventListener(
                 group23.push(newdeck2[g3[i]]);
             }
             for (i = 0; i < group21.length; i++) {
-                cardList1.innerHTML += `<li class="card"><span class="top">${group21[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group21[i]}</span></li>`
+                cardList1.innerHTML += `<li class="card display"><span class="top">${group21[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group21[i]}</span></li>`
             }
             for (i = 0; i < group22.length; i++) {
-                cardList2.innerHTML += `<li class="card"><span class="top">${group22[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group22[i]}</span></li>`
+                cardList2.innerHTML += `<li class="card display"><span class="top">${group22[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group22[i]}</span></li>`
             }
             for (i = 0; i < group23.length; i++) {
-                cardList3.innerHTML += `<li class="card"><span class="top">${group23[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group23[i]}</span></li>`
+                cardList3.innerHTML += `<li class="card display"><span class="top">${group23[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group23[i]}</span></li>`
             }
         } else if (count < 3 && count > 1) {
             cardlist1.innerHTML = ""
             cardlist3.innerHTML = ""
             cardlist3.innerHTML = ""
             shuffledList.innerHTML = ""
-            shuffledList.innerHTML = `<li class="card"><span class="top">${newdeck2[10]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${newdeck2[10]}</span></li>`
-            console.log(newdeck3[10])
+            shuffledList.innerHTML = `<li class="card display"><span class="top">${newdeck2[10]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${newdeck2[10]}</span></li>`
+            console.log(newdeck2[11])
 
             cardlist1.setAttribute("class", "noDisplay")
             cardlist2.setAttribute("class", "noDisplay")
@@ -237,13 +237,13 @@ cardList3.addEventListener(
                 group12.push(newdeck[g2[i]]);
             }
             for (i = 0; i < group11.length; i++) {
-                cardList1.innerHTML += `<li class="card"><span class="top">${group11[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group11[i]}</span></li>`
+                cardList1.innerHTML += `<li class="card display"><span class="top">${group11[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group11[i]}</span></li>`
             }
             for (i = 0; i < group12.length; i++) {
-                cardList2.innerHTML += `<li class="card"><span class="top">${group12[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group12[i]}</span></li>`
+                cardList2.innerHTML += `<li class="card display"><span class="top">${group12[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group12[i]}</span></li>`
             }
             for (i = 0; i < group13.length; i++) {
-                cardList3.innerHTML += `<li class="card"><span class="top">${group13[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group13[i]}</span></li>`
+                cardList3.innerHTML += `<li class="card display"><span class="top">${group13[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group13[i]}</span></li>`
             }
         } else if (count < 2 && count > 0) {
             
@@ -262,21 +262,21 @@ cardList3.addEventListener(
                 group22.push(newdeck2[g2[i]]);
             }
             for (i = 0; i < group21.length; i++) {
-                cardList1.innerHTML += `<li class="card"><span class="top">${group21[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group21[i]}</span></li>`
+                cardList1.innerHTML += `<li class="card display"><span class="top">${group21[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group21[i]}</span></li>`
             }
             for (i = 0; i < group22.length; i++) {
-                cardList2.innerHTML += `<li class="card"><span class="top">${group22[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group22[i]}</span></li>`
+                cardList2.innerHTML += `<li class="card display"><span class="top">${group22[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group22[i]}</span></li>`
             }
             for (i = 0; i < group23.length; i++) {
-                cardList3.innerHTML += `<li class="card"><span class="top">${group23[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group23[i]}</span></li>`
+                cardList3.innerHTML += `<li class="card display"><span class="top">${group23[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group23[i]}</span></li>`
             }
         } else if (count < 3 && count > 1) {
             cardlist1.innerHTML = ""
             cardlist3.innerHTML = ""
             cardlist3.innerHTML = ""
             shuffledList.innerHTML = ""
-            shuffledList.innerHTML = `<li class="card"><span class="top">${newdeck2[10]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${newdeck2[10]}</span></li>`
-            console.log(newdeck3[10])
+            shuffledList.innerHTML = `<li class="card display"><span class="top">${newdeck2[11]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${newdeck2[11]}</span></li>`
+            console.log(newdeck3[11])
 
             cardlist1.setAttribute("class", "noDisplay")
             cardlist2.setAttribute("class", "noDisplay")
@@ -289,4 +289,4 @@ cardList3.addEventListener(
 
 
 // Your Card displayed
-console.log("Your card", newdeck3[10])
+console.log("Your card", newdeck2[11])
