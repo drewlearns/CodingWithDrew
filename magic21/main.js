@@ -137,13 +137,12 @@ cardList1.addEventListener(
             cardlist3.innerHTML = ""
             cardlist3.innerHTML = ""
             shuffledList.innerHTML = ""
-            shuffledList.innerHTML = `<li class="card display"><span class="top">${newdeck2[10]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${newdeck2[10]}</span></li>`
-            console.log(newdeck2[11])
-
+            shuffledList.innerHTML = `<li class="card display"><span class="top">${newdeck2[10]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${newdeck2[10]}</span></li>`          
             cardlist1.setAttribute("class", "noDisplay")
             cardlist2.setAttribute("class", "noDisplay")
             cardlist3.setAttribute("class", "noDisplay")
             shuffledList.setAttribute("class", "display")
+            alert(`Was your card ${newdeck2[10]}`)
         }
         count++
     }
@@ -207,12 +206,13 @@ cardList2.addEventListener(
             cardlist3.innerHTML = ""
             shuffledList.innerHTML = ""
             shuffledList.innerHTML = `<li class="card display"><span class="top">${newdeck2[10]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${newdeck2[10]}</span></li>`
-            console.log(newdeck2[11])
 
             cardlist1.setAttribute("class", "noDisplay")
             cardlist2.setAttribute("class", "noDisplay")
             cardlist3.setAttribute("class", "noDisplay")
             shuffledList.setAttribute("class", "display")
+            alert(`Was your Card ${newdeck2[10]}?`)
+
         }
         count++
     }
@@ -276,12 +276,13 @@ cardList3.addEventListener(
             cardlist3.innerHTML = ""
             shuffledList.innerHTML = ""
             shuffledList.innerHTML = `<li class="card display"><span class="top">${newdeck2[11]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${newdeck2[11]}</span></li>`
-            console.log(newdeck3[11])
+            
 
             cardlist1.setAttribute("class", "noDisplay")
             cardlist2.setAttribute("class", "noDisplay")
             cardlist3.setAttribute("class", "noDisplay")
             shuffledList.setAttribute("class", "display")
+            alert(`Was your card ${newdeck2[11]}?`)
         }
         count++
     }
