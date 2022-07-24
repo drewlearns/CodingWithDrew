@@ -11,8 +11,6 @@ ul {
     align-items: center;
     flex-basis: 100%;
     flex-wrap: wrap;
-    max-width: 80%;
-    margin: 10px 10%;
 }
 
 li {

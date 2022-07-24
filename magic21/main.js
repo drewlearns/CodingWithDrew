@@ -24,12 +24,12 @@ let group23 = [];
 let group31 = [];
 let group32 = [];
 let group33 = [];
-
+const shuffledList = document.querySelector(".shuffled")
 //shuffle
 let shuffled = [];
 function shuffler() {
     i = cards.length,
-    j = 0;
+        j = 0;
     while (i--) {
         j = Math.floor(Math.random() * (i + 1));
         shuffled.push(cards[j]);
@@ -51,61 +51,117 @@ for (i = 0; i < 7; i++) {
     group2.push(shuffled[g2[i]])
     group3.push(shuffled[g3[i]])
 }
+for (i = 0; i < shuffled.length; i++) {
+    shuffledList.innerHTML += `<li class="card display"><span class="top" >${shuffled[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${shuffled[i]}</span></li>`
+}
+button1.addEventListener(
+    "click",
+    () => {
+        cardlist1.setAttribute("class", ".display group1")
+        cardlist2.setAttribute("class", ".display group2")
+        cardlist3.setAttribute("class", ".display group3")
+        shuffledList.setAttribute("class", "noDisplay")
+
+    }
+)
+
 const cardList1 = document.querySelector("ul.group1")
-for (i=0; i<group1.length; i++){
-    cardList1.innerHTML += `<li class="card"><span class="top" >${group1[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group1[i]}</span></li>`
+for (i = 0; i < group1.length; i++) {
+    cardList1.innerHTML += `<li class="card"><span class="top">${group1[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group1[i]}</span></li>`
 }
 const cardList2 = document.querySelector("ul.group2")
-for (i=0; i<group1.length; i++){
-    cardList2.innerHTML += `<li class="card"><span class="top" >${group2[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group2[i]}</span></li>`
+for (i = 0; i < group1.length; i++) {
+    cardList2.innerHTML += `<li class="card"><span class="top">${group2[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group2[i]}</span></li>`
 }
 const cardList3 = document.querySelector("ul.group3")
-for (i=0; i<group1.length; i++){
-    cardList3.innerHTML += `<li class="card"><span class="top" >${group3[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group3[i]}</span></li>`
+for (i = 0; i < group1.length; i++) {
+    cardList3.innerHTML += `<li class="card"><span class="top">${group3[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group3[i]}</span></li>`
 }
 cardList1.addEventListener(
     "click",
-    ()=>{
+    () => {
         console.log("Your card was in card list 1:", cardList1)
+        newdeck.push(...group2);
+        newdeck.push(...group1);
+        newdeck.push(...group3);
+        console.log("group1 newdeck", newdeck)
+        cardlist1.innerHTML = ""
+        cardlist2.innerHTML = ""
+        cardlist3.innerHTML = ""
+        // deal kinda
+        for (i = 0; i < 7; i++) {
+            group11.push(newdeck[g1[i]]);
+            group12.push(newdeck[g2[i]]);
+            group13.push(newdeck[g3[i]]);
+        }
+        for (i = 0; i < group11.length; i++) {
+            cardList1.innerHTML += `<li class="card"><span class="top">${group11[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group11[i]}</span></li>`
+        }
+        for (i = 0; i < group12.length; i++) {
+            cardList2.innerHTML += `<li class="card"><span class="top">${group12[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group12[i]}</span></li>`
+        }
+        for (i = 0; i < group13.length; i++) {
+            cardList3.innerHTML += `<li class="card"><span class="top">${group13[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group13[i]}</span></li>`
+        }
     }
 )
 cardList2.addEventListener(
     "click",
-    ()=>{
+    () => {
         console.log("Your card was in card list 2:", cardList2)
+        newdeck.push(...group1);
+        newdeck.push(...group2);
+        newdeck.push(...group3);
+        console.log("group2 newdeck", newdeck)
+        cardlist1.innerHTML = ""
+        cardlist2.innerHTML = ""
+        cardlist3.innerHTML = ""
+        // deal kinda
+        for (i = 0; i < 7; i++) {
+            group11.push(newdeck[g1[i]]);
+            group12.push(newdeck[g2[i]]);
+            group13.push(newdeck[g3[i]]);
+        }
+        for (i = 0; i < group11.length; i++) {
+            cardList1.innerHTML += `<li class="card"><span class="top">${group11[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group11[i]}</span></li>`
+        }
+        for (i = 0; i < group12.length; i++) {
+            cardList2.innerHTML += `<li class="card"><span class="top">${group12[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group12[i]}</span></li>`
+        }
+        for (i = 0; i < group13.length; i++) {
+            cardList3.innerHTML += `<li class="card"><span class="top">${group13[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group13[i]}</span></li>`
+        }
     }
 )
 cardList3.addEventListener(
     "click",
-    ()=>{
-        console.log("Your card was in card list 3:", cardList3)
+    () => {
+        newdeck.push(...group1);
+        newdeck.push(...group3);
+        newdeck.push(...group2);
+        console.log("group3 newdeck", newdeck)
+        cardlist1.innerHTML = ""
+        cardlist2.innerHTML = ""
+        cardlist3.innerHTML = ""
+        // deal kinda
+        for (i = 0; i < 7; i++) {
+            group11.push(newdeck[g1[i]]);
+            group12.push(newdeck[g2[i]]);
+            group13.push(newdeck[g3[i]]);
+        }
+        for (i = 0; i < group11.length; i++) {
+            cardList1.innerHTML += `<li class="card"><span class="top">${group11[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group11[i]}</span></li>`
+        }
+        for (i = 0; i < group12.length; i++) {
+            cardList2.innerHTML += `<li class="card"><span class="top">${group12[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group12[i]}</span></li>`
+        }
+        for (i = 0; i < group13.length; i++) {
+            cardList3.innerHTML += `<li class="card"><span class="top">${group13[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group13[i]}</span></li>`
+        }
     }
 )
 
-// if your card is in the X group, shuffle so the X group is in the middle
-if (group1.includes(num)) {
-    newdeck.push(...group2);
-    newdeck.push(...group1);
-    newdeck.push(...group3);
-    console.log("group1 newdeck", newdeck)
-    
-} else if (group2.includes(num)) {
-    newdeck.push(...group1);
-    newdeck.push(...group2);
-    newdeck.push(...group3);
-    console.log("group2 newdeck", newdeck)
-} else {
-    newdeck.push(...group1);
-    newdeck.push(...group3);
-    newdeck.push(...group2);
-    console.log("group3 newdeck", newdeck)
-}
-// deal kinda
-for (i = 0; i < 7; i++) {
-    group11.push(newdeck[g1[i]]);
-    group12.push(newdeck[g2[i]]);
-    group13.push(newdeck[g3[i]]);
-}
+
 
 // if your card is in the X group, shuffle so the X group is in the middle
 if (group11.includes(num)) {
