@@ -94,8 +94,8 @@ cardList1.addEventListener(
             cardlist3.innerHTML = ""
             // deal kinda
             for (i = 0; i < 7; i++) {
-                group11.push(newdeck[g1[i]]);
                 group12.push(newdeck[g2[i]]);
+                group11.push(newdeck[g1[i]]);
                 group13.push(newdeck[g3[i]]);
             }
             for (i = 0; i < group11.length; i++) {
@@ -119,8 +119,8 @@ cardList1.addEventListener(
             cardlist3.innerHTML = ""
             // deal kinda
             for (i = 0; i < 7; i++) {
-                group21.push(newdeck2[g1[i]]);
                 group22.push(newdeck2[g2[i]]);
+                group21.push(newdeck2[g1[i]]);
                 group23.push(newdeck2[g3[i]]);
             }
             for (i = 0; i < group21.length; i++) {
@@ -233,8 +233,8 @@ cardList3.addEventListener(
             // deal kinda
             for (i = 0; i < 7; i++) {
                 group11.push(newdeck[g1[i]]);
-                group12.push(newdeck[g2[i]]);
                 group13.push(newdeck[g3[i]]);
+                group12.push(newdeck[g2[i]]);
             }
             for (i = 0; i < group11.length; i++) {
                 cardList1.innerHTML += `<li class="card"><span class="top">${group11[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group11[i]}</span></li>`
