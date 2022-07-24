@@ -133,16 +133,19 @@ cardList1.addEventListener(
                 cardList3.innerHTML += `<li class="card display"><span class="top">${group23[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group23[i]}</span></li>`
             }
         } else if (count < 3 && count > 1) {
+            newdeck3.push(...group22)
+            newdeck3.push(...group21)
+            newdeck3.push(...group23)
             cardlist1.innerHTML = ""
             cardlist3.innerHTML = ""
             cardlist3.innerHTML = ""
             shuffledList.innerHTML = ""
-            shuffledList.innerHTML = `<li class="card display"><span class="top">${newdeck2[10]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${newdeck2[10]}</span></li>`          
+            shuffledList.innerHTML = `<li class="card display"><span class="top">${newdeck3[10]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${newdeck3[10]}</span></li>`          
             cardlist1.setAttribute("class", "noDisplay")
             cardlist2.setAttribute("class", "noDisplay")
             cardlist3.setAttribute("class", "noDisplay")
             shuffledList.setAttribute("class", "display")
-            alert(`Was your card ${newdeck2[10]}`)
+            alert(`Was your card ${newdeck3[10]}`)
         }
         count++
     }
@@ -196,17 +199,20 @@ cardList2.addEventListener(
                 cardList3.innerHTML += `<li class="card display"><span class="top">${group23[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group23[i]}</span></li>`
             }
         } else if (count < 3 && count > 1) {
+            newdeck3.push(...group21)
+            newdeck3.push(...group22)
+            newdeck3.push(...group23)
             cardlist1.innerHTML = ""
             cardlist3.innerHTML = ""
             cardlist3.innerHTML = ""
             shuffledList.innerHTML = ""
-            shuffledList.innerHTML = `<li class="card display"><span class="top">${newdeck2[10]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${newdeck2[10]}</span></li>`
+            shuffledList.innerHTML = `<li class="card display"><span class="top">${newdeck3[10]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${newdeck2[10]}</span></li>`
 
             cardlist1.setAttribute("class", "noDisplay")
             cardlist2.setAttribute("class", "noDisplay")
             cardlist3.setAttribute("class", "noDisplay")
             shuffledList.setAttribute("class", "display")
-            alert(`Was your Card ${newdeck2[10]}?`)
+            alert(`Was your Card ${newdeck3[10]}?`)
 
         }
         count++
@@ -225,8 +231,8 @@ cardList3.addEventListener(
             // deal kinda
             for (i = 0; i < 7; i++) {
                 group11.push(newdeck[g1[i]]);
-                group13.push(newdeck[g3[i]]);
                 group12.push(newdeck[g2[i]]);
+                group13.push(newdeck[g3[i]]);
             }
             for (i = 0; i < group11.length; i++) {
                 cardList1.innerHTML += `<li class="card display"><span class="top">${group11[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group11[i]}</span></li>`
@@ -260,19 +266,23 @@ cardList3.addEventListener(
             for (i = 0; i < group23.length; i++) {
                 cardList3.innerHTML += `<li class="card display"><span class="top">${group23[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group23[i]}</span></li>`
             }
+
         } else if (count < 3 && count > 1) {
+            newdeck3.push(...group21)
+            newdeck3.push(...group23)
+            newdeck3.push(...group22)
             cardlist1.innerHTML = ""
             cardlist3.innerHTML = ""
             cardlist3.innerHTML = ""
             shuffledList.innerHTML = ""
-            shuffledList.innerHTML = `<li class="card display"><span class="top">${newdeck2[11]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${newdeck2[11]}</span></li>`
+            shuffledList.innerHTML = `<li class="card display"><span class="top">${newdeck3[10]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${newdeck3[10]}</span></li>`
             
 
             cardlist1.setAttribute("class", "noDisplay")
             cardlist2.setAttribute("class", "noDisplay")
             cardlist3.setAttribute("class", "noDisplay")
             shuffledList.setAttribute("class", "display")
-            alert(`Was your card ${newdeck2[11]}?`)
+            alert(`Was your card ${newdeck3[10]}?`)
         }
         count++
     }
