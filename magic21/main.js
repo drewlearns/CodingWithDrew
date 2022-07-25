@@ -124,10 +124,10 @@ cardList1.addEventListener(
                 group23.push(newdeck2[g3[i]]);
             }
             for (i = 0; i < group21.length; i++) {
-                cardList1.innerHTML += `<li class="card display"><span class="top">${group21[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group21[i]}</span></li>`
+                cardList1.innerHTML += `<li class="card display"><span class="top">${group22[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group22[i]}</span></li>`
             }
             for (i = 0; i < group22.length; i++) {
-                cardList2.innerHTML += `<li class="card display"><span class="top">${group22[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group22[i]}</span></li>`
+                cardList2.innerHTML += `<li class="card display"><span class="top">${group21[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group21[i]}</span></li>`
             }
             for (i = 0; i < group23.length; i++) {
                 cardList3.innerHTML += `<li class="card display"><span class="top">${group23[i]}</span><span class="cardType">🧜‍♀️</span><span class="mirror">🧜‍♀️</span><span class="bottom">${group23[i]}</span></li>`
